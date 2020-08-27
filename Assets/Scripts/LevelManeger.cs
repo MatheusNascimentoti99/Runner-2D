@@ -18,6 +18,11 @@ public class LevelManeger : MonoBehaviour
     public Text coinsText;
 
     public GameObject gameOverText;
+
+    private bool winLevel = false;
+    public GameObject winLevelText;
+    public int levelFree;
+
     void Awake()
     {
         if(levelManeger == null)
@@ -33,7 +38,7 @@ public class LevelManeger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!gameOver)
+        if (!gameOver && !winLevel)
         {
             seconds += Time.deltaTime;
             if(seconds > 60)
@@ -48,6 +53,10 @@ public class LevelManeger : MonoBehaviour
         if(gameOver && Input.GetMouseButtonDown(0))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        if (winLevel && Input.GetMouseButtonUp(0))
+        {
+            SceneManager.LoadScene("Menu");
         }
     }
 
@@ -72,5 +81,12 @@ public class LevelManeger : MonoBehaviour
     {
         gameOver = true;
         gameOverText.SetActive(true);
+    }
+
+    public void WinLevel()
+    {
+        winLevel = true;
+        LevelSet.levelSet.freeLevel(levelFree);
+        winLevelText.SetActive(true);
     }
 }

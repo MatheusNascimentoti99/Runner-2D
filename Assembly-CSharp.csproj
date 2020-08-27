@@ -59,12 +59,15 @@
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\DestroyRingByTime.cs" />
     <Compile Include="Assets\Scripts\MonkeyEnemy.cs" />
+    <Compile Include="Assets\Scripts\DownBellow.cs" />
     <Compile Include="Assets\Scripts\Projetil.cs" />
     <Compile Include="Assets\Scripts\PlayerControll.cs" />
     <Compile Include="Assets\Scripts\PowerUp.cs" />
     <Compile Include="Assets\Scripts\CoinsController.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-    <Compile Include="Assets\Scripts\DownBellow.cs" />
+    <Compile Include="Assets\Scripts\LevelSet.cs" />
+    <Compile Include="Assets\Scripts\Menu.cs" />
+    <Compile Include="Assets\Scripts\GetWin.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
