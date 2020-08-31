@@ -3,6 +3,8 @@ Project at Unity for development of simple game adapted of Sonic
 - Example of [High Level](https://www.youtube.com/watch?v=nc0rEUrlnCE&list=PLgTmU6kuSLtxtHfp-iqI-w_sKpseuuu2G&index=1) 
 - To run this game on the Unity is necessary has been install the support for Android
 
+Run Game at the [Runner-2D.APK](Runner-2D.apk)
+
 ### It's compatible Unity 2020.1.2f1 (64-bit)
 
 ### I'm doing
